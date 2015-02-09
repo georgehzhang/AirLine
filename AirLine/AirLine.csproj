@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC39F6B2-AD17-4A4C-B0D8-5A83910D66AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AirLine</RootNamespace>
+    <AssemblyName>AirLine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agent.Designer.cs">
+      <DependentUpon>agent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelReservation.Designer.cs">
+      <DependentUpon>CancelReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choose_Flight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose_Flight.Designer.cs">
+      <DependentUpon>Choose_Flight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerCheckIn.Designer.cs">
+      <DependentUpon>CustomerCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerData_GridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerData_GridView.Designer.cs">
+      <DependentUpon>CustomerData_GridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInfo.Designer.cs">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customersDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>customersDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="flightDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>flightDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FlightData_GridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightData_GridView.Designer.cs">
+      <DependentUpon>FlightData_GridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flightSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flightSeats.Designer.cs">
+      <DependentUpon>flightSeats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightInfo.Designer.cs">
+      <DependentUpon>FlightInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="globals.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SeatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeatForm.Designer.cs">
+      <DependentUpon>SeatForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agent.resx">
+      <DependentUpon>agent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelReservation.resx">
+      <DependentUpon>CancelReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choose_Flight.resx">
+      <DependentUpon>Choose_Flight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerCheckIn.resx">
+      <DependentUpon>CustomerCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerData_GridView.resx">
+      <DependentUpon>CustomerData_GridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInfo.resx">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightData_GridView.resx">
+      <DependentUpon>FlightData_GridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flightSeats.resx">
+      <DependentUpon>flightSeats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightInfo.resx">
+      <DependentUpon>FlightInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeatForm.resx">
+      <DependentUpon>SeatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="customersDatabaseDataSet.xsc">
+      <DependentUpon>customersDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="customersDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>customersDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="customersDatabaseDataSet.xss">
+      <DependentUpon>customersDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="flightDatabaseDataSet.xsc">
+      <DependentUpon>flightDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="flightDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>flightDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="flightDatabaseDataSet.xss">
+      <DependentUpon>flightDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AirLineDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AirLineDatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AirLineDatabase.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\ychair2.jpg" />
+    <None Include="Resources\rchair2.jpg" />
+    <None Include="Resources\gchair2.jpg" />
+    <None Include="Resources\rchair.jpg" />
+    <None Include="Resources\ychair.jpg" />
+    <None Include="Resources\gchair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
